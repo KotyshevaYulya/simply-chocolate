@@ -21,35 +21,35 @@
     <header class="header">
         <div class="container header-container">
             <nav class="header-nav">
-                <a class="header-logo" href=""><span>SIMPLY</span> CHOCOLATE
+                <a class="header-logo" href="./index.html"><span>SIMPLY</span> CHOCOLATE
                     <svg>
                         <use href="./images/icon.svg#icon-chocolate"></use>
                     </svg>
                 </a>
                 <ul class="header-nav-list">
-                    <li class="header-nav-item" tabindex="0"><a href="">Home</a></li>
-                    <li class="header-nav-item" tabindex="0"><a href="">How it’s made?</a></li>
-                    <li class="header-nav-item" tabindex="0"><a href="">Chocolate is loved</a></li>
+                    <li class="header-nav-item" tabindex="0"><a href="./index.html">Home</a></li>
+                    <li class="header-nav-item" tabindex="0"><a href="#made">How it’s made?</a></li>
+                    <li class="header-nav-item" tabindex="0"><a href="#loved">Chocolate is loved</a></li>
                 </ul>
             </nav>
 
             <ul class="header-soc-list">
                 <li class="header-soc-item" tabindex="0">
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                         <svg width="24" height="24">
                             <use href="./images/icon.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="header-soc-item" tabindex="0">
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                         <svg width="24" height="24">
                             <use href="./images/icon.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="header-soc-item" tabindex="0">
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer">
                         <svg width="24" height="24">
                             <use href="./images/icon.svg#icon-twitter"></use>
                         </svg>
@@ -114,8 +114,15 @@
                 </h1>
                 <div class="hero-buttons">
                     <button type="button" class="hero-btn">Buy now</button>
-                    <a href="" class="hero-made-link">How it’s made</a>
-                    <a href="" class="hero-scroll-link">scroll down</a>
+                    <a href="#made" class="hero-made-link">How it’s made</a>
+                    <a href="#" class="hero-scroll-link">
+                        <span>scroll down</span>
+                        <div class="scroll-circle">
+                            <svg class="scroll-svg" width="16" height="16">
+                                <use href="./images/icon.svg#icon-Vector-2"></use>
+                            </svg>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -214,7 +221,7 @@
             </div>
         </section>
 
-        <section class="made">
+        <section class="made" id="made">
             <div class="container made-container">
                 <h2 class="made-title title">HOW IT’S <span>made?</span></h2>
                 <div class="made-wrapper">
@@ -365,7 +372,7 @@
             </div>
         </section>
 
-        <section class="loved">
+        <section class="loved" id="loved">
             <div class="container loved-container">
                 <h2 class="loved-title title">chocolate is <span>loved</span></h2>
                 <ul class="loved-list">
@@ -404,21 +411,21 @@
                         <p class="footer-subtitle">Social networks</p>
                         <ul class="footer-soc-list">
                             <li class="footer-soc-item">
-                                <a class="footer-soc-link" href="">
+                                <a class="footer-soc-link" href="https://www.instagram.com" target="_blank">
                                     <svg width="20" height="20">
                                         <use href="./images/icon.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="footer-soc-item">
-                                <a class="footer-soc-link" href="">
+                                <a class="footer-soc-link" href="https://www.facebook.com" target="_blank">
                                     <svg width="20" height="20">
                                         <use href="./images/icon.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="footer-soc-item">
-                                <a class="footer-soc-link" href="">
+                                <a class="footer-soc-link" href="https://x.com" target="_blank">
                                     <svg width="20" height="20">
                                         <use href="./images/icon.svg#icon-twitter"></use>
                                     </svg>
@@ -445,13 +452,13 @@
             <div class="footer-nav-wrapper">
                 <ul class="footer-nav-list">
                     <li class="footer-nav-item">
-                        <a class="footer-nav-link" href="">Home</a>
+                        <a class="footer-nav-link" href="./index.html" rel="noopener noreferrer">Home</a>
                     </li>
                     <li class="footer-nav-item">
-                        <a class="footer-nav-link" href="">How it’s made?</a>
+                        <a class="footer-nav-link" href="#made" rel="noopener noreferrer">How it’s made?</a>
                     </li>
                     <li class="footer-nav-item">
-                        <a class="footer-nav-link" href="">Chocolate is loved</a>
+                        <a class="footer-nav-link" href="#loved" rel="noopener noreferrer">Chocolate is loved</a>
                     </li>
                 </ul>
                 <div class="footer-input-right">
@@ -517,6 +524,7 @@
             </form>
         </div>
     </div>
+    <script src="./main.js" type="module"></script>
 </body>
 
 </html>

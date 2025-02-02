@@ -174,7 +174,7 @@ input {
     visibility: hidden;
 }
 
-.mob-menu .is-open {
+.mob-menu.is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -188,8 +188,15 @@ input {
     background-color: transparent;
 }
 
+
+
 .close-menu-btn>svg {
     stroke: #FAFAFA;
+    transition-duration: 800ms;
+}
+
+.close-menu-btn svg:hover {
+    stroke: #FD9222;
 }
 
 
@@ -204,6 +211,11 @@ input {
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+    transition-duration: 800ms;
+}
+
+.menu-nav-item:hover {
+    color: #FD9222;
 }
 
 .menu-nav-item:not(:last-child) {
@@ -220,8 +232,12 @@ input {
 .menu-soc-item svg {
     stroke: #FAFAFA;
     fill: transparent;
+    transition-duration: 800ms;
 }
 
+.menu-soc-item svg:hover {
+    stroke: #FD9222;
+}
 
 /* ---------------HERO------------------ */
 .hero {
@@ -252,6 +268,7 @@ input {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    row-gap: 12px;
 }
 
 .hero-btn {
@@ -287,22 +304,55 @@ input {
     transition: 300ms linear;
 }
 
+
 .hero-made-link:hover,
 .hero-made-link:focus {
     color: #FD9222;
     border: 1px solid #FD9222;
 }
 
+
 .hero-scroll-link {
+
+    display: flex;
+    gap: 12px;
+    align-items: center;
     color: rgb(255, 255, 255);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: -0.03em;
-    margin-top: 32px;
+    transition-duration: 800ms;
 }
 
+.scroll-circle {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    transition-duration: 800ms;
+}
 
+.scroll-svg {
+    fill: #FD9222;
+    transition-duration: 800ms;
+}
+
+.hero-scroll-link:hover {
+    color: #FD9222;
+}
+
+.hero-scroll-link:hover .scroll-circle {
+    background-color: #FD9222;
+}
+
+.hero-scroll-link:hover .scroll-svg {
+    fill: #FFFFFF;
+}
 
 /* ---------------FEATURES------------------ */
 
@@ -913,7 +963,7 @@ input {
     pointer-events: none;
 }
 
-.backdrop .is-open {
+.backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -934,7 +984,13 @@ input {
     right: 24px;
     top: 24px;
     stroke: #111111;
+    cursor: pointer;
+    transition-duration: 800ms;
     /* fill: transparent; */
+}
+
+.icon-close-modal:hover {
+    stroke: #FD9222;
 }
 
 .modal-title {
@@ -1183,6 +1239,23 @@ input {
 
     .hero-scroll-link {
         margin-left: auto;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: -0.03em;
+    }
+
+
+    .scroll-circle {
+
+        width: 38px;
+        height: 38px;
+
+    }
+
+    .scroll-svg {
+        width: 22px;
+        height: 22px;
     }
 
     /* ---------------Tablet FEATURES------------------ */
